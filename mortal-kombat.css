@@ -1,0 +1,115 @@
+:root {
+    --fucsia-oscuro: #BC105C; 
+    --fucsia-claro: #E11364;
+}
+
+
+body {
+    background-color: var(--fucsia-claro);
+    font-family: sans-serif,Arial, Helvetica ;
+    font-size: medium;
+}
+
+.titulo {
+    background-color: var(--fucsia-oscuro);
+    font-family: sans-serif,Arial, Helvetica ;
+    font-size: 40px;
+    position: relative; 
+    color: rgb(245, 241, 241);
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    padding: 10px;
+}
+
+.titulo::before, 
+.titulo::after {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px; /* Ancho de los bordes */ 
+    background-color: white; /* Color de los bordes */
+}
+
+.titulo::before {
+    left: 0;
+}
+
+.titulo::after {
+    right: 0;
+}
+
+.contenedor-fucsia { 
+    background-color: var(--fucsia-oscuro);
+    width: 90%;
+    margin: 25px auto; /* Se asegura que el contenedor este centrado */
+    border-radius: 3px ;
+    padding-bottom: 10px;
+    font-family: sans-serif,Arial, Helvetica ; 
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.contenedor-blanco {
+    background-color: rgb(241, 233, 233);
+    width: 99%;
+    margin: 25px auto; /* Se asegura que el contenedor este centrado */
+    border-radius: 3px ;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow: hidden; /* Limpia el float */
+    
+}
+.contenedor-advertencia {
+    background-color: red;
+    width: 30%;
+    border-radius: 3%;
+    text-align: center;
+    padding: 10px;
+    float: right; /* Mueve el contenedor a la derecha */
+    margin-right: 10px  ;
+}
+
+.centrar-imagen {
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto; /* Centro horizontal */
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.descripcion {
+    font-size:medium ;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+a {
+    background-color: var(--fucsia-claro);
+    color: black;
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    
+}
+
+a:hover {
+    background-color: var(--fucsia-oscuro); /* Fondo naranja al pasar el ratón por encima */
+}
+
+.back-button { 
+    background-color: #2C8F20; 
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.back-button:hover { 
+    background-color: rgb(6, 84, 6);
+}

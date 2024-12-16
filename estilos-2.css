@@ -1,0 +1,117 @@
+:root {
+    --azul-electrico: #0B2F9F;
+    --azul-marino: #161D6F;
+    --celeste-cielo: #98DED9;
+    --verde-agua: #C7FFD8;
+}
+
+body {
+    background-color: var(--azul-electrico);
+}
+
+.titulo {
+    color: white ;
+    font-size: 60px;
+    font-family: "Orbitron", serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 2px -2px 3px rgba(0, 255, 225, 0.5);
+
+}
+
+.contenedor-titulo { 
+    background-image: url(imagenes/joysticks-fondo.webp);
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 90px; /* Ajusta la altura según sea necesario */
+    border-width: 20px;
+    box-shadow: 10px 10px 5px black; /* añade sombra a la caja contenedora */
+    background-size: cover;
+}
+
+h2 { /* Los mas vendidos */
+    margin-left: 15px;
+    color: white;
+    font-size: 35px;
+    font-family: "Press Start 2P", system-ui;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0; 
+    } 
+}
+
+h3  { /* titulos juegos */
+    margin-left: 8px;
+    font-family: "Roboto Mono", monospace;
+    background-color: #009990;
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    box-shadow: 5px 5px 5px black;
+}
+
+p {
+    font-family: "Tomorrow", sans-serif;
+}
+
+
+.imagen-juego {
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto; /* Centro horizontal */
+    max-width: 100%; /* Asegura que la imagen no se desborde */   
+}
+
+.fondo-caja { /* caja externa */
+    background-color: #161D6F;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    box-shadow: 10px 10px 5px black;
+    margin: 40px auto;
+    padding-bottom: 30px;
+    gap: 20px; /* Añade un espaciado uniforme entre las cajas internas */
+}
+
+
+.contenedor-juego { /* caja interna */
+    position: relative; /* Establece el contenedor como relativo */
+    background-color: var(--celeste-cielo);
+    width: 93%;
+    margin: 10px auto; /* Ajusta los márgenes (arriba, derecha, abajo, izquierda) */
+    padding: 10px;
+    border-style: inset ;
+    border-color: grey;
+    border-width: 2px;
+    padding-bottom: 25px;
+   
+}
+
+
+.boton-comprar {
+    position: absolute; /* Posiciona el botón absolutamente */
+    bottom: -20px; /* Coloca el botón justo debajo del borde inferior */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición para centrar exactamente */
+    background-color: rgb(32, 202, 32);
+    border: none;
+    font-size: larger;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    
+}
+
+footer {
+    background-color: rgb(178, 170, 170);
+    color: var(--azul-marino);
+    width: 79%;
+    padding: 3px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+}

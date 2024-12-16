@@ -1,0 +1,129 @@
+:root {
+    --fucsia-oscuro: #BC105C; 
+    --fucsia-claro-fondo: #E11364;
+}
+
+body {
+    background-color: var(--fucsia-claro-fondo);
+}
+
+.imagen-juego {
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto; /* Centro horizontal */
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    
+}
+
+
+
+h2 {
+    color: white;
+    font-family: sans-serif,Arial, Helvetica ;
+    padding-top: 20px;
+    font-size: large;
+    padding-left: 10px;
+}
+
+h3 {
+    font-family: sans-serif,Arial, Helvetica ;
+    color: var(--fucsia-oscuro);
+    text-align: end;
+    padding-top: 20px;
+    padding-right: 10px;
+    font-size: medium;
+    border-bottom: 2px dotted var(--fucsia-oscuro); /* puntitos divisores */
+    margin: 20px auto;
+}
+
+p {
+    font-family: sans-serif,Arial, Helvetica ;
+}
+
+.titulo {
+    background-color: var(--fucsia-oscuro);
+    font-family: sans-serif,Arial, Helvetica ;
+    font-size: 40px;
+    position: relative; 
+    color: rgb(245, 241, 241);
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    padding: 10px;
+}
+
+
+
+.titulo::before, 
+.titulo::after {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px; /* Ancho de los bordes */ 
+    background-color: white; /* Color de los bordes */
+    
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+    font-family: sans-serif,Arial, Helvetica ;
+}
+
+.titulo::before {
+    left: 0;
+}
+
+.titulo::after {
+    right: 0;
+}
+
+.contenedor-juego { /* caja blanca */
+    background-color: white;
+    width: 98%;
+    margin: 25px auto; /* Se asegura que el contenedor este centrado */
+    border-radius: 3px ;
+    padding-bottom: 10px;
+
+}
+
+.fondo-caja { /* caja fucsia */
+    background-color: var(--fucsia-oscuro);
+    width: 81%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-radius: 3px;
+}
+
+footer{
+    background-color: #E96093;
+    color: white;
+    font-family: sans-serif,Arial, Helvetica ;
+    text-align: center;
+    margin: 0 auto;
+    width: 81%;
+    padding: 8px 0; /* espaciado interno */
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.boton-comprar {
+    background-color: #2C8F20;
+    color: white;
+    padding: 10px;
+    border-radius:  5px; 
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+ 
+}
+
+button:hover {
+    background-color: var(--fucsia-claro-fondo);
+}
+
+.centrar-boton {
+    text-align: center;
+}
